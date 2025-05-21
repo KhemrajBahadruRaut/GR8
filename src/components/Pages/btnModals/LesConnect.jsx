@@ -10,7 +10,7 @@ const LesConnect = () => {
   return (
     <div className="flex justify-center ">
       <button
-        className="px-4 py-2 rounded md:px-6 md:py-3 rounded-xl shadow-lg backdrop-blur-sm bg-white/40 text-white font-medium hover:bg-white/50 transition-all duration-300"
+        className="px-4 py-2 rounded md:px-6 md:py-3 rounded-xl shadow-lg backdrop-blur-sm bg-black/40 text-white font-medium hover:bg-black/60 transition-all duration-300"
         onClick={openModal}
       >
         Let’s Connect
@@ -33,7 +33,6 @@ const LesConnect = () => {
           <h2
             id="contact-form-title"
             className="text-xl font-semibold text-center mb-4"
-            style={{ fontFamily: 'Impact' }}
           >
             Get the right answers
           </h2>

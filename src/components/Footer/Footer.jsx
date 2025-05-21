@@ -3,33 +3,32 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-gray-700 via-gray-500 to-gray-700 p-10 mt-4" >
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 rounded-2xl p-6 text-white">
+    <footer className="content-center bg-gradient-to-r h-[100vh] from-gray-700 via-gray-500 to-gray-700 p-1 bg-[url('/src/assets/BG/vertialca.jpg')] bg-cover bg-center h-screen" >
+      <div className="max-w-7xl text-black mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 rounded-2xl p-3">
         {/* Left: Logo and Address */}
-        <div>
+        <div className="pl-[100px]">
           <img src={logo} alt="Logo" className="h-[120px] mb-4 " />
           <p className="text-sm">
-            Greight Private Limited
+            Greight Private Limited <br />
+            +977 (970) 533-3552 <br />
+            +977 (01) 592-4173
             <br />
             Bhaisepati, Lalitpur, Nepal
-            <br />
-            Phone: +977 (970) 533-3552
             <br />
             Email: management@gr8nepal.com
             <br />
             <br />
             <br />
-            USA Location Westford, MA
-            <br />
             Phone: +1 (857) 265-4008 <br />
-            Phone: +1 (774) 287-6819
+            Phone: +1 (774) 287-6819 <br />
+            Boston, MA
           </p>
         </div>
 
         {/* Middle: Map */}
-        <div> 
-          <h3 className="text-lg font-semibold mb-3">Our Location</h3>
-          <div className="w-full h-48">
+        <div className="">  
+                    <p className="underline font-bold mb-3 mt-3">OUR LOCATION</p>
+          <div className="w-full h-80">
             <iframe
               title="Company Location"
               className="w-full h-full border-0 rounded-[10px]"
@@ -38,98 +37,91 @@ const Footer = () => {
               loading="lazy"
             ></iframe>
           </div>
+          <div className="mt-3">
+
+          <p className="justify-center flex ">
+          283, Aadinath Marga,
+          </p>
+          <p className="justify-center flex ">
+            Bhaisepati, Lalitpur 18, Nepal
+            </p>
+          </div>
         </div>
 
         {/* Right: About & Links */}
-        <div>
-          <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
-          <ul className="space-y-1 text-sm">
-            <li>
-              <Link
-                href="/about"
-                className="text-white hover:text-[#ce8037] transition-colors"
-              >
-                Home
-              </Link>
-            </li>
+        <div className=" pl-[100px]">
+          <p className="underline font-bold mt-3">SUPPORT</p>
+          <ul className=" text-black text-sm relative top-[-15px] right-[30px]">
             <li>
               <a
                 href="/About"
-                className="text-white hover:text-[#ce8037] transition-colors"
+                className=" hover:text-[#ce8037] transition-colors"
               >
-                About
+                Help Center
               </a>
             </li>
             <li>
               <a
                 href="/contacts"
-                className="text-white hover:text-[#ce8037] transition-colors"
+                className=" hover:text-[#ce8037] transition-colors"
               >
-                Contacts
-              </a>
-            </li>
-            <li>
-              <a
-                href="/blog"
-                className="text-white hover:text-[#ce8037] transition-colors"
-              >
-                Blogs
+                Contact us
               </a>
             </li>
             <li>
               <a
                 href="/faq"
-                className="text-white hover:text-[#ce8037] transition-colors"
+                className=" hover:text-[#ce8037] transition-colors"
               >
                 FAQs
               </a>
             </li>
-            <button className="border px-5 py-2 mt-5 rounded-3 ">
-                Subscribe
-            </button>
           </ul>
 
-        </div>
-
-        {/* last secton of footer */}
-        <div>
+        <div className="mt-5">
+                    <p className="underline font-bold mb-3 mt-3">MY ACCOUNT</p>
           
-          <h3 className="text-lg font-semibold mb-3">Updates</h3>
-          <ul className="space-y-1 text-sm">
-            
-            <li>
-              <a
-                href="/blog"
-                className="text-white hover:text-[#ce8037] transition-colors"
-              >
-                Blog
-              </a>
-            </li>
-            <li>
-              <a
-                href="/news"
-                className="text-white hover:text-[#ce8037] transition-colors"
-              >
-                News
-              </a>
-            </li>
-            <li>
-              <a
-                href="/clientreview"
-                className="text-white hover:text-[#ce8037] transition-colors"
-              >
-                Clent Review
-              </a>
-            </li>
-          </ul>
+            <button className="border border-black shadow-lg px-5 py-2 rounded-3 ">
+                Login
+            </button>
 
         </div>
 
+        <div className="pt-[200px] relative right-10">
+          
+          <div className=" flex justify-between" >
+            <div className=" flex-col justify-center" >
+              <div className="flex  justify-center">
+                
+            <img src="/src/assets/gr8logo.png" alt="" width='50px' height='50px' />
+              </div>
+            <p className="font-bold text-[14px]">
+              Digital Solutions
+            </p>
+            </div>
+           <div>
+            <div className="flex justify-center">
+                
+            <img src="/src/assets/gr8logo.png" alt="" width='50px' height='50px' />
+              </div>
+            <p className="font-bold text-[14px]">
+              Property Management
+            </p>
+           </div>
+          </div>
+            <button className="border border-black shadow-lg px-5 py-2  rounded-3 ">
+                SEND US YOUR FEEDBACK
+            </button>
+
+        </div>
+
+        </div>
 
       </div>
 
       {/* Optional Bottom Text */}
       <div className="mt-1 text-center text-xs text-gray-400">
+
         © {new Date().getFullYear()} Real Estate Co. All rights reserved.
       </div>
     </footer>

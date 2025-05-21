@@ -3,6 +3,7 @@
 @plugin "daisyui";
 
 
+
 a {
   @apply no-underline text-black;
 }
@@ -11,12 +12,10 @@ a {
 dialog[open] {
   display: block !important;
 }
-
-/* font */
- @font-face {
-      font-family: 'Impact';
-      src: url('./fonts/Impact.ttf') format('truetype'); /* Adjust path if needed */
-      font-style: normal;
-      font-weight: normal; /* Or specify the weight */
-      font-display: swap; /* For optimal loading */
-    }
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  src: url('/public/fonts/static/BricolageGrotesque_SemiCondensed-Regular.ttf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: condensed;
+}
