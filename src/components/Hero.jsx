@@ -106,7 +106,7 @@ const Hero = () => {
       {/* sidebar  */}
       <Sidebar />
 
-      <div className="z-10 relative top-[310px] transform md:px-10 text-start">
+      <div className="z-10 relative top-[250px] transform md:px-10 text-start">
         <p
           className="px-4 text-[#453f35] 
              [text-shadow:3px_2px_19px_rgba(0,0,0,0.3)] 
@@ -121,7 +121,7 @@ const Hero = () => {
               [text-shadow:3px_1px_4px_rgba(0,0,0,0.3)]
               text-xl sm:text-1xl md:text-2xl lg:text-3xl tracking-[2px]"
         >
-          A Pioneer Initiative by GR8 Realtors USA
+          A Pioneer Initiative by GR8 Realtors Group
         </p>
       </div>
 

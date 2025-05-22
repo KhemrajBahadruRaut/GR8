@@ -1,3 +1,4 @@
+import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaYoutube } from "react-icons/fa";
 import logo from "/src/assets/logowhite.png";
 import { Link } from "react-router-dom";
 
@@ -6,22 +7,22 @@ const Footer = () => {
     <footer className="content-center bg-gradient-to-r h-[100vh] from-gray-700 via-gray-500 to-gray-700 p-1 bg-[url('/src/assets/BG/vertialca.jpg')] bg-cover bg-center h-screen" >
       <div className="max-w-7xl text-black mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 rounded-2xl p-3">
         {/* Left: Logo and Address */}
-        <div className="pl-[100px]">
+        <div className="pl-[100px] ">
           <img src={logo} alt="Logo" className="h-[120px] mb-4 " />
-          <p className="text-sm">
-            Greight Private Limited <br />
-            +977 (970) 533-3552 <br />
-            +977 (01) 592-4173
+          <p className="text-sm leading-[2] cursor-pointer">
+           <span className="underline "> Greight Private Limited</span> <br />
+            <span className="underline">+977 (970) 533-3552 </span><br />
+            <span className="underline">+977 (01) 592-4173</span>
             <br />
-            Bhaisepati, Lalitpur, Nepal
+            <span className="underline">Bhaisepati, Lalitpur, Nepal</span>
             <br />
-            Email: management@gr8nepal.com
+            <span className="underline">Email: management@gr8nepal.com</span>
             <br />
             <br />
             <br />
-            Phone: +1 (857) 265-4008 <br />
-            Phone: +1 (774) 287-6819 <br />
-            Boston, MA
+            <span className="underline">Phone: +1 (857) 265-4008 </span><br />
+            <span className="underline">Phone: +1 (774) 287-6819</span> <br />
+            <span className="underline">Boston, MA</span>
           </p>
         </div>
 
@@ -37,14 +38,11 @@ const Footer = () => {
               loading="lazy"
             ></iframe>
           </div>
-          <div className="mt-3">
-
-          <p className="justify-center flex ">
-          283, Aadinath Marga,
-          </p>
-          <p className="justify-center flex ">
+          <div className="mt-3  flex-column text-center">
+            <div>
+                283, Aadinath Marga,
+            </div>
             Bhaisepati, Lalitpur 18, Nepal
-            </p>
           </div>
         </div>
 
@@ -120,7 +118,16 @@ const Footer = () => {
       </div>
 
       {/* Optional Bottom Text */}
-      <div className="mt-1 text-center text-xs text-gray-400">
+      <div className="mt-1 text-center text-xs text-gray-700 ">
+        <div className="flex text-black justify-center mb-2 gap-3">
+          
+        <FaFacebook className="size-7"/>
+        <FaInstagram className="size-7"/>
+        <FaYoutube className="size-7"/>
+        <FaTiktok className="size-7"/>
+        <FaLinkedin className="size-7"/>
+
+        </div>
 
         © {new Date().getFullYear()} Real Estate Co. All rights reserved.
       </div>
