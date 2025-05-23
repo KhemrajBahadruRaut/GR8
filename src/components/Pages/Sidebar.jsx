@@ -1,4 +1,3 @@
-import { Menu } from "lucide-react"
 import { FaFacebook, FaLinkedin, FaTiktok, FaYoutube } from "react-icons/fa"
 import { FaInstagram } from "react-icons/fa6"
 import { Link } from "react-router-dom"
@@ -6,11 +5,18 @@ import { Link } from "react-router-dom"
 const Sidebar = () => {
   return (
 
-     <div className="drawer drawer-end z-11 justify-end top-[13px] absolute">
+     <div className="drawer drawer-end z-11 justify-end border">
   <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
   <div className="drawer-content right-[10px] flex ">
-    <label htmlFor="my-drawer-4" className="drawer-button cursor-pointer text-white">
-      <img src="/src/assets/btnmenu.png" alt="" width="70px" className="mt-1 mr-4" />
+    <label htmlFor="my-drawer-4" style={{
+        fontFamily: 'Bank Gothic, sans-serif',
+        '@font-face': {
+          fontFamily: 'Bank Gothic',
+          fontWeight: 'normal',
+          fontStyle: 'normal',
+        },
+      }} className="drawer-button text-[20px]  cursor-pointer ">
+      MENU 
     </label>
   </div>
 

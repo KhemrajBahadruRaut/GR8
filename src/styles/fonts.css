@@ -1,0 +1,14 @@
+/* src/styles/fonts.css */
+@font-face {
+  font-family: 'Bank Gothic';
+  src: url('../fonts/bank gothic medium bt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bank Gothic';
+  src: url('../fonts/BankGothic Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

@@ -7,6 +7,7 @@ import Service from '../components/Pages/Service'
 import DigitalSolutions from '../components/Pages/btnPages/DigitalSolutions'
 import PropertyMgmt from '../components/Pages/btnPages/PropertyMgmt'
 import LesConnect from '../components/Pages/btnModals/LesConnect'
+import Nav from '../components/layout/Nav'
 
 const MyRoute = () => {
   return (
@@ -21,8 +22,8 @@ const MyRoute = () => {
             {/* digital solution and property management */}
             <Route path="digital-soln" element={<DigitalSolutions/>}/>
             <Route path="prop-mgmt" element={<PropertyMgmt/>}/>
-            
             <Route path="test" element={<LesConnect/>}/>
+            <Route path="nav"  element={<Nav/>}/>
           </Routes>
         </BrowserRouter>
   )

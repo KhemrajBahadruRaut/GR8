@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "bootstrap";
 @plugin "daisyui";
+@import "../src/styles/fonts.css";
 
 
 
